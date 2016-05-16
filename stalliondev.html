@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<!-- If IE use the latest rendering engine -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Set the page to the width of the device and set the zoon level -->
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<title>Stallion Development</title>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<style>
+
+@import url(http://fonts.googleapis.com/css?family=Expletus+Sans:600);
+/*==========SCALE-IN==========*/
+@-webkit-keyframes scale-in {
+     0%   {transform: scale(10, 10); opacity: 0;}
+    100% {transform: scale(1, 1); opacity: 1;}
+}
+
+@keyframes scale-in {
+    0%   {transform: scale(10, 10); opacity: 0;}
+    100% {transform: scale(1, 1);  opacity: 1;}
+}
+/*==========ROLL-OUT==========*/
+@-webkit-keyframes roll-out {
+    0%   {width: 0;}
+    100% {width: 100%; }
+}
+@keyframes roll-out {
+    0%   {width: 0;}
+    100% {width: 100%; }
+}
+body{
+   background-image: url("http://www.kokean.com/i/dark-blue-texture-wallpaper-desktop.jpg");
+}
+main{
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Expletus Sans', cursive;
+}
+.hero{
+  width: 100%;
+  max-width: 1200px;
+  height: 500px;
+  text-align: center;
+  margin: 0 auto;
+  background: black;
+  position: relative; 
+ 
+}
+
+.hero h1{
+  font-size: 4.1em;
+  margin: auto;
+  position: absolute; 
+  top: 120px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  color: red;
+
+}
+.hero p{
+  font-size: 3.5em;
+  margin: auto;
+  position: absolute; 
+  top: 220px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+   z-index: 1;
+   color: white;
+}
+.hero img{
+  width: 100%;
+}
+.bar{
+  width: 100%;
+  height: 200px;
+  background: -moz-linear-gradient(289deg, #c60a09 0%, #f23332 36%, #c60a09 100%);
+  background: -webkit-linear-gradient(289deg, #c60a09 0%, #f23332 36%, #c60a09 100%);
+  background: -ms-linear-gradient(289deg, #c60a09 0%, #f23332 36%, #c60a09 100%);
+  background: linear-gradient(161deg, #c60a09 0%, #f23332 36%, #c60a09 100%);
+  opacity: 0.3;
+  position: absolute; 
+  z-index: 0;
+  left: 0;
+  top: 90px;
+  -ms-transform-origin: 100% 0%;
+  -webkit-transform-origin: 100% 0%;
+  transform-origin: 100% 0%;
+   -webkit-animation: roll-out 1.2s ease-out ;
+  -moz-animation: roll-out 1.2s ease-out ;
+    animation: roll-out 1.2s ease-out ; 
+}
+.hero h1, .hero p{
+  -webkit-animation: scale-in 1.3s ease-out;
+  -moz-animation: scale-in 1.3s  ease-out;
+    animation: scale-in 1.3s ease-out; 
+}
+
+
+@media all and (max-width: 768px) {
+  .hero{
+    height: 50vw;
+  }
+  .bar{
+    height: 26vw;
+    top: 10vw;
+  }
+  .hero h1{
+    font-size: 8vw;
+    top: 13vw;
+  }
+  .hero p{
+    font-size: 3vw;
+    top: 27vw;
+  }
+ 
+}
+
+
+
+
+
+ 
+
+.yellowtext{
+  color: yellow;
+  font-size: 16px;
+  font-family: Georgia;
+  text-align: center;
+
+}
+
+.whitetext{
+  color: white;
+  text-align: center;
+}
+.thumbnail{
+  background-image: url("http://www.freewebheaders.com/wordpress/wp-content/gallery/girly-backgrounds/red-dry-cracked-ground-abstract-girly-website-header.jpg");
+}
+
+
+/* Adds borders for tabs */
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+.nav-tabs {
+    margin-bottom: 0;
+}
+</style>
+
+</head>
+<body>
+
+
+   
+ 
+      
+
+ 
+  
+
+<!-- CONTAINERS -->
+<!-- container puts padding around itself while container-fluid fills the whole screen. Bootstap grids require a container. -->
+
+
+<!-- jumbotron enlarges fonts and puts everything in a gray box with rounded corners. If jumbotron is outside a container it fills the total width. You can change the styles by placing the changes after the Bootstrap CDN link -->
+
+
+<main>
+  <div class="hero">
+    <h1><u>Stallion Developments</u></h1>
+    <p>{Developer Currently Developing}</p>
+    <img src="http://www.lobotz.com/wp-content/uploads/edd/2015/12/modernhorse1.jpg" />
+     <div class="bar"></div>
+  </div>
+ 
+</main
+ 
+
+<!-- BUTTONS -->
+<!-- There are many built in button colors and sizes. If a link is to trigger in page functionality it should use role="button". The button element should be used in most situations -->
+<p>
+<br>
+<button type="submit" class = "btn btn-danger btn-xs" role = "button">Button</button>
+<input type="button" value="Info" class = "btn btn-info btn-xs">
+<button type="submit" class = "btn-primary btn-xs">Primary</button>
+<button type="submit" class = "btn btn-success btn-xs">Success</button>
+
+<!-- bootstraptut2.html -->
+
+<!-- ICONS -->
+<!-- Bootstrap has hundreds of free icons. http://getbootstrap.com/components/#glyphicons They can be used on their own or inside of buttons with a link or regular button for example. -->
+s
+
+</div>
+</div>
+
+
+
+
+<!-- Thumbnails -->
+<div class="container">
+<div class="row">
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+    <div class="thumbnail yellowtext">
+      <img src="http://i.kinja-img.com/gawker-media/image/upload/s--SHqZOsKI--/c_scale,fl_progressive,q_80,w_800/1493973784509653164.jpg" alt="yamahamotobot">
+      <div class="caption">
+        <h3 class="yellowtext">Motorcycles</h3>
+        <p class="whitetext">I am an avid motorcycle rider and enthusiast. I feel like I'm Fabio whenever I take off my helmet. Take a look below on how you can be an Ethiopian Stallion!</p>
+        <p><a href="http://www.revzilla.com" class="btn btn-primary" role="button">Click to Learn More</a></p>
+      </div>
+      </div>
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+    <div class="thumbnail">
+      <img src="http://successfulstudent.org/wp-content/uploads/2015/05/App-Development-300x294.jpg" alt="app development image">
+      <div class="caption">
+        <h3 class="yellowtext">App Development</h3>
+        <p class="whitetext">I enjoy all aspects of the app development process. I am currently learning about the Android SDK platoform and IOS' swift. Click here to learn about how you can make your first Android app!</p>
+        <p><a href="http://developer.android.com/training/basics/firstapp/index.html" class="btn btn-primary" class="btn btn-primary" role="button">Click to Learn More</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+    <div class="thumbnail">
+      <img src="https://cloudararat.com/wp-content/uploads/2015/07/UX.jpg" alt ="UX picture">
+      <div class="caption">
+        <h3 class="yellowtext">UX Design</h3>
+        <p class="whitetext"> User experience and user interface are two of the most elementary within development's domain. Click here to learn more about the various of forms of graphic interfaces, templates, and frameworks.</p>
+        <p><a href="https://www.youtube.com/watch?v=5SLrYHcwo3M" class="btn btn-primary" class="btn btn-primary"  role="button">Click to Learn More</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+    <div class="thumbnail">
+      <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZpV58Z9F7xKwqHkUIMgJ4LBuq6kcm_QWU9nvso7Lm1L6VEnX9ag" alt="Web Dev Langs/Frames">
+      <div class="caption">
+        <h3 class="yellowtext">Web Development</h3>
+        <p class="whitetext">Web Development is a serious career interest of mine that I hope to pursuse. In my spare time, I proactively continue to develop projects using HTML, CSS, Javascript, Java, and Bootstrap.</p>
+        <p><a href="" class="btn btn-primary" role="button">CLick to Learn More</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- Use nav-pills, nav-tabs. To center tabs add nav-justified to the class for ul -->
+<ul class="nav nav-pills">
+  <li class="active"><a data-toggle="tab" href="#superman">UI/UX</a></li>
+  <li><a data-toggle="tab" href="#batman">App Development</a></li>
+   <li><a data-toggle="tab" href="#batman">Web Development</a></li>
+ 
+  <!-- Dropdown menu item -->
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Motorcycles
+    <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+ 
+      
+    </ul>
+  </li>
+</ul>
+ 
+
+<!-- Progress bar -->
+<!-- Provide progress feedback to users by changing the value of style for the progress-bar (Doesn't work on IE9 or below) progress-bar-striped is optional -->
+<div class="container">
+<div class="progress">
+  <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+    <span class="sr-only">40% Complete</span>
+  </div>
+</div>
+</div>
+
+
+
+
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
